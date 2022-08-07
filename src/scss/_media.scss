@@ -1,0 +1,11 @@
+@import './variables';
+
+*,
+*::after,
+*::before {
+
+  @media print {
+    background: transparent;
+    color: var(--black);
+  }
+}

@@ -12,6 +12,8 @@ const Skills: React.FC = () => {
       <li>Typescript</li>
       <li>Webback</li>
       <li>Docker</li>
+      <li>NodeJS</li>
+      <li>PostgreSQL/MongoDB</li>
     </ul>
   )
 }

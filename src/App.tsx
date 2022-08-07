@@ -6,6 +6,8 @@ import Contacts from './components/Contacts'
 import Languages from './components/Languages'
 import Skills from './components/Skills'
 import RightTop from './components/RightTop'
+import ExperienceList from './components/ExperienceList'
+import About from './components/About'
 
 function App() {
   return (
@@ -26,6 +28,12 @@ function App() {
       </aside>
       <main className={styles.right}>
         <RightTop />
+        <div className={styles.rightItem}>
+          <ExperienceList />
+        </div>
+        <div className={styles.rightItem}>
+          <About />
+        </div>
       </main>
     </div>
   )

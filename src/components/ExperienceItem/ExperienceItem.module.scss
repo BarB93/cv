@@ -1,0 +1,49 @@
+@import '../../scss/variables';
+
+.container {
+  display: flex;
+
+  & + & {
+    margin-top: 20px;
+  }
+}
+
+.period {
+  font-size: 12px;
+  padding-right: 20px;
+  margin-right: 40px;
+}
+
+.start {
+  display: inline-block;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 5px);
+    display: inline-block;
+    width: 10px;
+    height: 0.1px;
+    background: var(--black);
+    transform: translateY(-50%);
+  }
+}
+
+.companyName {
+  font-size: 18px;
+}
+
+.grade {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.responsibilities {
+  padding-left: 30px;
+  font-size: 14px;
+  font-size: 300;
+}

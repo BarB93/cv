@@ -1,0 +1,18 @@
+@import '../../scss/variables';
+
+.container {
+  p + p {
+    margin-top: 15px;
+  }
+
+  p span {
+    margin-right: 5px;
+  }
+}
+
+.link {
+  &:hover {
+    color: var(--catalina-blue);
+    text-decoration: underline;
+  }
+}
