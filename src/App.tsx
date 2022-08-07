@@ -5,11 +5,12 @@ import styles from './App.module.scss'
 import Contacts from './components/Contacts'
 import Languages from './components/Languages'
 import Skills from './components/Skills'
+import RightTop from './components/RightTop'
 
 function App() {
   return (
     <div className={styles.resume}>
-      <div className={styles.left}>
+      <aside className={styles.left}>
         <div className={styles.image}>
           <img src={foto} alt='foto' />
         </div>
@@ -22,8 +23,10 @@ function App() {
         <LeftItem title='Навыки'>
           <Skills />
         </LeftItem>
-      </div>
-      <div className={styles.right}>right</div>
+      </aside>
+      <main className={styles.right}>
+        <RightTop />
+      </main>
     </div>
   )
 }
