@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ballsContainer {
+  display: flex;
+  margin: 5px 0;
+}
+
+.ball {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+
+  & + & {
+    margin-left: 3px;
+  }
+
+  &.fill {
+    background: rgba(255, 255, 255, 0.8);
+  }
+}
+
+.subtitle {
+  font-size: 13px;
+  font-weight: 300;
+}

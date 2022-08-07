@@ -1,0 +1,11 @@
+@import '../../scss/variables';
+
+.title {
+  margin: 0 calc(var(--padding-base) * -1);
+  padding: 5px var(--padding-base);
+  background: var(--madison);
+}
+
+.body {
+  margin: 15px 0;
+}
