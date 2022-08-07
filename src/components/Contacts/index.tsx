@@ -3,6 +3,7 @@ import ContactsItem from '../ContactsItem'
 import pricePrettify from './../../utils/pricePrettify'
 import phonePrettify from './../../utils/phonePrettify'
 
+import githubSVG from '../../assets/img/git_icon.svg'
 import whatsappSVG from '../../assets/img/wapp_icon.svg'
 import telegramSVG from '../../assets/img/telegram_icon.svg'
 import phoneSVG from '../../assets/img/phone_icon.svg'
@@ -13,7 +14,7 @@ const Contacts: React.FC = () => {
   return (
     <div>
       <div className={styles.item}>
-        <a className={styles.link} href='tel:+79773882433'>
+        <a className={styles.link} href='tel:+79773882433' target='_blank'>
           <img className={styles.icon} src={phoneSVG} alt='phone' />
           <span className={styles.number}>{phonePrettify('+79773882433')}</span>
         </a>
@@ -25,9 +26,15 @@ const Contacts: React.FC = () => {
         </a>
       </div>
       <div className={styles.item}>
-        <a className={styles.link} href='mailto:barovskiyboris@gmail.com'>
+        <a className={styles.link} href='mailto:barovskiyboris@gmail.com' target='_blank'>
           <img className={styles.icon} src={emailSVG} alt='email' />
           barovskiyboris@gmail.com
+        </a>
+      </div>
+      <div className={styles.item}>
+        <a className={styles.link} href='https://github.com/BarB93' target='_blank'>
+          <img className={styles.icon} src={githubSVG} alt='github' />
+          github/BarB93
         </a>
       </div>
       <ContactsItem title='Гражданство'>РФ</ContactsItem>

@@ -10,7 +10,7 @@ const Skills: React.FC = () => {
       <li>React</li>
       <li>Redux/MobX</li>
       <li>Typescript</li>
-      <li>Webback</li>
+      <li>Webpack</li>
       <li>Docker</li>
       <li>NodeJS</li>
       <li>PostgreSQL/MongoDB</li>
